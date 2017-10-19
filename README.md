@@ -1,1 +1,1 @@
-# journaliZe
+# ecoversity
