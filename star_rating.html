@@ -8,7 +8,8 @@
 	<title>Ecoversity</title>
 	<link href="styles/main.css" rel="stylesheet" type="text/css" />
 	<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
-	<script type="text/javascript" src="js/nicEdit.js"></script>
+	<script type="text/javascript" src="js/nicEdit.js" ></script>
+	<script type="text/javascript" src="js/starRatings.js" ></script>
 
 
 </head>
@@ -29,6 +30,59 @@
 		<a href="homepage.html">Home Page</a>
 		<a href="reports_and_analytics.html">Reports and Analytics</a>
 		<a href="dailyView.html">Update Directory</a>
+	</div>
+	
+
+	<div id="largeBox" style = "width:750px">
+		<h2 class= "rounded" style = "width:750px">Star Rating</h2>
+		<form action="/action_page.php">
+			<b>Building:</b>
+			<input list="buildings" name="building">
+				<datalist id="buildings">
+					<option value="Braggs">
+					<option value="IW">
+					<option value="Engineering North">
+					<option value="Medical Center">
+					<option value="The Hub">
+				</datalist>
+		</form>
+		<form action="/action_page.php">
+			<b>Level:</b>
+			<input list="levels" name="level">
+					<datalist id="levels">
+						<option value="Basement">
+						<option value="Ground">
+						<option value="1">
+						<option value="2">
+						<option value="3">
+					</datalist>
+		</form>
+		<form action="/action_page.php">
+			<b>Room:</b>
+			<input list="rooms" name="room">
+					<datalist id="rooms">
+						<option value="1">
+						<option value="2">
+						<option value="3">
+						<option value="4">
+						<option value="5">
+					</datalist>
+		</form>
+		<form action="/action_page.php">
+			<b>Energy Type:</b>
+			<input list="Energy Type" name="Energy Type">
+					<datalist id="Energy Type">
+						<option value="Waste">
+						<option value="Water">
+						<option value="Electrcity">
+					</datalist>
+		</form>
+		<b>Date From: </b><input type="date" name="from" min="2000-01-02"><br>
+		<b>Date To: </b><input type="date" name="to"><br>
+		<button type="button" onclick="starRatingBuilding()">See Star Rating for Parameters.</button>
+		<img id="buildingStar" src="images/0star.png" width="150" height="25">
+		<br><button type="button">View Data for Parameters</button>
+		<br><button type="button" onclick="starRatingReset()">Reset</button>
 	</div>
 
 	<script src="js/sidenav.js"></script>
