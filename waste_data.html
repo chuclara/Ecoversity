@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<title>Ecoversity</title>
+	<link href="styles/waste.css" rel="stylesheet" type="text/css"/>
+    <script src="js/sidenav.js"></script>
+</head>
+
+<body>
+    <div id = "main">
+        <header>
+          <a href="homepage.html"><img class ="icon" src="images/logo.png" alt="Logo" width="120" height="120"></a>
+          <a href="signin.html"><img class="logout" id="logoff" src="images/logout.png" alt="Logout" width="45" height="45"></a>
+          <a href="account_settings.html"><img class="icon" id = "settings" src="images/settings.png" alt="Settings" width="70" height="70"></a>
+        </header>
+        <span style="font-size:30px; cursor:pointer;margin-left:5px" onclick="openNav()"> &#9776; </span>
+      </div>
+
+     <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="homepage.html">Home Page</a>
+        <a href="reports_and_analytics.html">Reports and Analytics</a>
+        <a href="update_directory.html">Update Directory</a>
+        <a href="star_rating.html">Star Rating</a>
+        <a href="waste_data.html">Waste Data</a>
+      </div>
+
+      <div class="waste">Waste Data</div>
+
+      <div class="parameters">Enter Parameters
+          <select>
+              <option value="directory0">Directory</option>
+              <option value="directory1">Ingkarni Wardli Lvl 3</option>
+              <option value="directory2">Hub Central</option>
+              <option value="directory3">Hughes Lvl 4</option>
+              <option value="director4">Engineering Maths Lvl 1</option>
+          </select>
+          <form action="/action_page.php">
+              <input type="text" name="totalmass" value="Total Mass (kg)">
+              <br>
+              <input type="text" name="timeperiod" value="Time Period (months)">
+              <br>
+              <input type="submit" value="Import Waste Data">
+          </form>
+          <button type="button">Advanced Import</button>
+      </div>
+      <div class="waste-statistics">Waste Statistics<br>
+          <img src="images/waste-stats-demo.png" alt="waste-stats-demo" width="400" height="250">
+      <select>
+          <option value="directory0">Directory</option>
+          <option value="directory1">Ingkarni Wardli Lvl 3</option>
+          <option value="directory2">Hub Central</option>
+          <option value="directory3">Hughes Lvl 4</option>
+          <option value="director4">Engineering Maths Lvl 1</option>
+      </select>
+    </div>
+</body>
+</html>
