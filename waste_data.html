@@ -30,25 +30,25 @@
       <div class="waste">Waste Data</div>
 
       <div class="parameters">Enter Parameters
-          <select>
-              <option value="directory0">Directory</option>
-              <option value="directory1">Ingkarni Wardli Lvl 3</option>
-              <option value="directory2">Hub Central</option>
-              <option value="directory3">Hughes Lvl 4</option>
-              <option value="director4">Engineering Maths Lvl 1</option>
-          </select>
-          <form action="/action_page.php">
+          <form action="/action_page.php" class="formforwaste">
+              <select class="selectforwaste">
+                  <option value="directory0">Directory</option>
+                  <option value="directory1">Ingkarni Wardli Lvl 3</option>
+                  <option value="directory2">Hub Central</option>
+                  <option value="directory3">Hughes Lvl 4</option>
+                  <option value="director4">Engineering Maths Lvl 1</option>
+              </select>
               <input type="text" name="totalmass" value="Total Mass (kg)">
               <br>
               <input type="text" name="timeperiod" value="Time Period (months)">
               <br>
               <input type="submit" value="Import Waste Data">
+              <button class="buttonforwaste" type="button">Advanced Import</button>
           </form>
-          <button type="button">Advanced Import</button>
       </div>
-      <div class="waste-statistics">Waste Statistics<br>
+      <div class="waste-statistics">Waste Statistics
           <img src="images/waste-stats-demo.png" alt="waste-stats-demo" width="400" height="250">
-      <select>
+      <select class="selectforwaste">
           <option value="directory0">Directory</option>
           <option value="directory1">Ingkarni Wardli Lvl 3</option>
           <option value="directory2">Hub Central</option>

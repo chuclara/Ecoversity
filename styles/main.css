@@ -27,7 +27,8 @@ body {
     padding: 0;
     margin: 0;
     /*background: white;*/
-    /*background-image: url(https://scontent-syd2-1.xx.fbcdn.net/v/t35.0-12/22643081_10210497428618908_1115359380_o.png?oh=84daa25ef9c9103d547494430364ba8c&oe=59EAE463);*/
+    background-image: url(https://scontent.fcbr1-1.fna.fbcdn.net/v/t35.0-12/22664267_10210500918986165_491149746_o.png?oh=aae4be1df21db5fa32f43019f697fa55&oe=59EBA728);
+    background-size: cover;
     color: #000000;
     font-size: 2em;
     width: 100%;
@@ -46,11 +47,11 @@ body {
 }
 
 header{
-    /*background: linear-gradient(to right, rgba(106, 149, 66, 1), rgba(149, 188, 80, 1), rgba(210, 227, 150, 1), rgba(249, 249, 248, 1));*/
+    background: linear-gradient(to right, rgba(106, 149, 66, 1), rgba(149, 188, 80, 1), rgba(210, 227, 150, 1), rgba(249, 249, 248, 1));
     background-color: #95bc50;
-    width: 100%;
-    /*left: 200px;*/
-    height:80px;
+    position: relative;
+    left: 146px;
+    width: 88%;
 }
 
 /*footer{
