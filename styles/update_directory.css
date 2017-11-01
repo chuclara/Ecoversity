@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu+Condensed');
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: center;
+    margin-top: 10%
+}
+ a{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: #e2e2e2;
+}
+body {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: white;
+    color: #000000;
+    font-size: 2em;
+    width: 100%;
+    line-height: 1.5;
+}
+
+#settings{
+    position: absolute;
+    right:70px;
+}
+
+#logoff{
+    position: absolute;
+    right:0;
+    margin: 0px 20px;
+}
+
+header{
+    background: linear-gradient(to right, rgba(106, 149, 66, 1), rgba(149, 188, 80, 1), rgba(210, 227, 150, 1), rgba(249, 249, 248, 1));
+    /*background-color: #95bc50;*/
+    width: 100%;
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+}
+
+textarea{
+    width: 900px;
+    height: 400px;
+    text-align: left;
+    margin:auto;
+}
+
+/* for 3 buttons, Create, Update, Remove */
+#classesOptions {   
+	position:absolute;
+	transition: .5s ease;
+    top: 30%;
+    left: 20%;
+}
+
+#classesOptions ul {
+	list-style:none;
+	display:block;  
+}
+
+#classesOptions ul li {
+    padding:20px 6px 20px 6px;
+    background-color:#45839e; /* Think this needs to change */
+    display:inline:block;
+    border-radius:10px;
+    margin-bottom: 50px;    
+}
+
+#classesOptions ul li a {
+	display:block;  
+	text-decoration:none;
+	color: white;
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+.button{
+    /*background-color: #45839e; */
+    background: linear-gradient(to top right, rgba(0, 89, 155, 1), rgba(88, 149, 197, 1), rgba(249, 249, 248, 1));
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 25px 25px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+    background-color: red; /* Green */
+    color: white;
+}
+
+
+.container{
+    padding-bottom: 30px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    width:100%;
+    text-align: center;
+}
+
+
+
+.home{
+    position: relative;
+    text-align: center;
+
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 20px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr.not_header:hover {
+    background-color: #f5f5f5
+}
+
+#largeBox{
+    padding-bottom: 30px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    right:0;
+    left:0;
+    width:1000px;
+    background-color: #ffffff; /* Light grey */
+    border-radius: 25px;
+} /* used for large sections of text/images */
+
+h2.rounded{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+
+h2#largeBoxHeader{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.horz_nav_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.horz_nav_bar_item {
+    float: left;
+}
+
+.horz_nav_bar_item .horz_nav_bar_link {
+    display: block;
+    color: #c5402f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.horz_nav_bar_item .horz_nav_bar_link:hover {
+    background-color: #dddddd;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f9f9f8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #45839e;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f9f9f8;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.main {
+    transition: margin-left .5s;
+}
+
+h2 {
+    background: #e2e2e2;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.logout {
+    padding-top: 12px;
+}
+
+.EcoProjectParameters{
+	position:absolute;
+	transition: .5s ease;
+    top: 25%;
+    left: 20%;
+    width: 1200px;
+    height: 500px;
+    margin: 20px;
+    background-color: #45839e; 
+    /*background: linear-gradient(to top right, rgba(0, 89, 155, 1), rgba(88, 149, 197, 1), rgba(249, 249, 248, 1));
+    */
+	border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 25px 25px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size: 120%
+}
+
+.parameters {
+    position:absolute;
+	transition: .5s ease;
+    top: 25%;
+    left: 40%;
+    width: 800px;
+    height: 450px;
+    margin: 20px;
+    background-color: #45839e; 
+    /*background: linear-gradient(to top right, rgba(0, 89, 155, 1), rgba(88, 149, 197, 1), rgba(249, 249, 248, 1));
+    */
+	border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 25px 25px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size: 120%
+}
+
+.waste-statistics{
+    position: relative;
+    top: -22px;
+    left: 200px;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    /*background-color: #45839e; */
+    background: linear-gradient(to top right, rgba(0, 89, 155, 1), rgba(88, 149, 197, 1), rgba(249, 249, 248, 1));
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 25px 25px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-size: 120%
+}
+
+.waste{
+    position: relative;
+    left: 200px;
+    font-size: 140%;
+    color: rgba(106, 149, 66, 1);
+}
+
+label {
+	width: 500px; 
+	float: left; 
+	margin: 0 50px 0 20px; 
+}	
+
+labelForCreate {
+	width: 340px;
+	float: left;
+	margin: 0 20px 0 20px;
+}
+
+span {
+	display: block; 
+	margin: 0 0 0px; 
+	font-size: 60%; 
+	font-weight: bold;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.formforwaste {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.buttonforUpdateConfirm {
+    width: 100%;
+    background-color: #95BC50; /*dark khaki*/
+    color: white;
+    padding: 14px;
+    margin: 60px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttonforDelete{
+	width: 100%;
+    background-color: red;
+    color: white;
+    padding: 14px;
+    margin: 60px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.buttonforEco {
+    width: 100%;
+    background-color: #95BC50; /*dark khaki*/
+    color: white;
+    padding: 14px;
+    margin: 120px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.selectforwaste {
+    width: 100%;
+    height: 45px;
+    padding: 12px 20px;
+    margin: 80px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.selectforParameters {
+    width: 500px; 
+	float: left; 
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<title>New Eco Project</title>
+	<link href="styles/update_directory.css" rel="stylesheet" type="text/css"/>
+    <script src="js/sidenav.js"></script>
+</head>
+
+<body>
+    <div id = "main">
+        <header>
+          <a href="homepage.html"><img class ="icon" src="images/logo.png" alt="Logo" width="120" height="120"></a>
+          <a href="signin.html"><img class="logout" id="logoff" src="images/logout.png" alt="Logout" width="45" height="45"></a>
+          <a href="account_settings.html"><img class="icon" id = "settings" src="images/settings.png" alt="Settings" width="70" height="70"></a>
+        </header>
+        <span style="font-size:30px; cursor:pointer;margin-left:5px" onclick="openNav()"> &#9776; </span>
+      </div>
+
+     <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="homepage.html">Home Page</a>
+        <a href="reports_and_analytics.html">Reports and Analytics</a>
+        <a href="update_directory.html">Update Directory</a>
+        <a href="star_rating.html">Star Rating</a>
+        <a href="waste_data.html">Waste Data</a>
+      </div>
+
+      <!-- Enter parameters function -->
+	<div class="EcoProjectParameters"> Enter Parameters
+          <form action="/action_page.php" class="formforwaste">
+              <label for="Building Name">
+				<select class="selectforParameters">
+					<option value="directory0">Building..</option>
+					<option value="directory1">Ingkarni Wardli</option>
+					<option value="directory2">Hub Central</option>
+					<option value="directory3">Engineering North</option>
+					<option value="director4">Engineering Maths</option>
+					<option value="director5">The Braggs</option>
+				</select>
+			  </label>
+			  <label for="Building Name">
+				<input type="text" id="Building Name" value="Initial Cost..">
+			  </label>
+			  <label for="Building Name">
+				<select class="selectforParameters">
+					<option value="directory0">Floor..</option>
+					<option value="directory1">Level 1</option>
+					<option value="directory2">Level 2</option>
+					<option value="directory3">Level 3</option>
+					<option value="director4">Level 4</option>
+				</select>
+			  </label>
+			  <label for="Building Name">
+				<input type="text" id="Building Name" value="Timeframe.. (DD/MM/YYYY - DD/MM/YYYY)">
+			  </label>
+			  <label for="Building Name">
+				<select class="selectforParameters">
+					<option value="directory0">Energy Type..</option>
+					<option value="directory1">Energy</option>
+					<option value="directory2">Waste</option>
+					<option value="directory3">Water</option>
+				</select>
+			  </label>
+			  <label for="Building Name">
+				<input type="text" id="Building Name" value="Eco Project..(enter name)">
+			  </label>
+			  
+              <button class="buttonforEco" type="button">Create Project</button>
+          </form>
+      </div>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
-	<title>Update Directory</title>
+	<title>Create New Building</title>
 	<link href="styles/update_directory.css" rel="stylesheet" type="text/css"/>
     <script src="js/sidenav.js"></script>
 </head>
@@ -36,17 +36,35 @@
 		</ul>
 	</div>
 	
-	<!-- Search function -->
-	<div class="parameters">Building Search
+	<!-- Create new building function -->
+	<div class="parameters">
           <form action="/action_page.php" class="formforwaste">
-              <select class="selectforwaste">
-                  <option value="directory0">Select</option>
-                  <option value="directory1">Ingkarni Wardli</option>
-                  <option value="directory2">Hub Central</option>
-                  <option value="directory3">Engineering North</option>
-                  <option value="director4">Engineering Maths</option>
-              </select>
-              <button class="buttonforDelete" type="button">Delete</button>
+              <labelForCreate for="Building Name">
+				<span>Building Name:</span>
+				<input type="text" id="Building Name" value="Enter Building Name">
+			  </labelForCreate>
+			  <labelForCreate for="Building Name">
+				<span>Number Of Floors:</span>
+				<input type="text" id="Building Name" value="Enter Number of Floors">
+			  </labelForCreate>
+			  <labelForCreate for="Building Name">
+				<span>Building Type:</span>
+				<input type="text" id="Building Name" value="Enter Building Type">
+			  </labelForCreate>
+			  <labelForCreate for="Building Name">
+				<span>Rooms per Floor</span>
+				<input type="text" id="Building Name" value="Enter Rooms per Floor">
+			  </labelForCreate>
+			  <labelForCreate for="Building Name">
+				<span>Description</span>
+				<input type="text" id="Building Name" value="Enter Description">
+			  </labelForCreate>
+			  <labelForCreate for="Building Name">
+				<span>Cost</span>
+				<input type="text" id="Building Name" value="Enter Costs">
+			  </labelForCreate>
+			  
+              <button class="buttonforUpdateConfirm" type="button">Confirm</button>
           </form>
       </div>
       
