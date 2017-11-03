@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 	<title>Create New Building</title>
-	<link href="styles/update_directory.css" rel="stylesheet" type="text/css"/>
+	<link href="styles/update_directory_success.css" rel="stylesheet" type="text/css"/>
     <script src="js/sidenav.js"></script>
 </head>
 
@@ -64,9 +64,21 @@
 				<input type="text" id="Building Name" value="Enter Costs">
 			  </labelForCreate>
 			  
-              <a href="create_new_building_success.html"<button class="buttonforUpdateConfirm" type="button">Confirm</button></a>
+              <button class="buttonforUpdateConfirm" type="button">Confirm</button>
           </form>
       </div>
-      
+	  
+	<!-- Success message -->
+	<div id="loading">
+	<div class="successBox">
+		<form action="/action_page.php" class="formforwaste">
+		<span>Success!</span>
+		<a href="create_new_building.html" <button class="buttonforSuccess" type="button">Done</button></a>
+	</div>
+	</div>
+	
+	
+</div>
+	  
 </body>
 </html>

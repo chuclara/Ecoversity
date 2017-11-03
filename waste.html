@@ -12,8 +12,8 @@
     <div id = "main">
         <header>
           <a href="homepage.html"><img class ="icon" src="images/logo.png" alt="Logo" width="80" height="80"></a>
-          <!--<a href="signin.html"><img class="logout" id="logoff" src="images/logout.png" alt="Logout" width="45" height="45"></a>
-          <a href="account_settings.html"><img class="icon" id = "settings" src="images/settings.png" alt="Settings" width="70" height="70"></a>-->
+          <!--a href="signin.html"><img class="logout" id="logoff" src="images/logout.png" alt="Logout" width="45" height="45"></a>
+          <a href="account_settings.html"><img class="icon" id = "settings" src="images/settings.png" alt="Settings" width="70" height="70"></a-->
         </header>
         <span style="font-size:30px; cursor:pointer;margin-left:5px" onclick="openNav()"> &#9776; </span>
       </div>
@@ -32,28 +32,24 @@
       <div class="parameters">Enter Parameters
           <form action="/action_page.php" class="formforwaste">
               <select class="selectforwaste">
-                  <option value="directory0">Directory</option>
+ 
                   <option value="directory1">Ingkarni Wardli Lvl 3</option>
-                  <option value="directory2">Hub Central</option>
-                  <option value="directory3">Hughes Lvl 4</option>
-                  <option value="director4">Engineering Maths Lvl 1</option>
+
               </select>
-              <input type="text" name="totalmass" value="Total Mass (kg)">
+              <input type="text" name="totalmass" value="1200">
               <br>
-              <input type="text" name="timeperiod" value="Time Period (months)">
+              <input type="text" name="timeperiod" value="5">
               <br>
-              <button class="buttonforwaste" onclick="window.location.href='waste.html'" type="button">Import Waste Data</button>
-              <button class="buttonforwaste" type="button">Advanced Import </button>
+              <input type="submit" value="Import Waste Data">
+              <button class="buttonforwaste" type="button">Advanced Import</button>
           </form>
       </div>
       <div class="waste-statistics">Waste Statistics
-          <img src="images/blank.png" alt="waste-stats-demo" width="400" height="250">
+          <img src="images/waste-stats-demo.png" alt="waste-stats-demo" width="400" height="250">
       <select class="selectforwaste">
-          <option value="directory0">Directory</option>
+
           <option value="directory1">Ingkarni Wardli Lvl 3</option>
-          <option value="directory2">Hub Central</option>
-          <option value="directory3">Hughes Lvl 4</option>
-          <option value="director4">Engineering Maths Lvl 1</option>
+
       </select>
     </div>
 </body>

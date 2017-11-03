@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+  <title>Login</title>
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+  <body>
+      <div class="main-body">
+      <div id = "main">
+          <!--<header>
+            <img class ="icon" src="images/logo.png" alt="Logo" width="120" height="120"></a>
+            <img class="logout" id="logoff" src="images/logout.png" alt="Logout" width="80" height="90"></a>
+            <img class="icon" id = "settings" src="images/settings.png" alt="Settings" width="80" height="80"></a>
+          </header>-->
+        </div>
+    </div>
+        <div class="login-body">
+        <div class="login">
+		<div class="login-screen">
+            <div class="app-title">
+                <h1><img src="./images/logo.png" height="180px"></a></h1>
+			</div>
+
+        <form>
+            <input type="text" class="control-group" placeholder="Username" id="text1" /><br />
+            <input type="password" class="control-group" placeholder="Password" id="text2" /><br />
+            <input type="button" value="Login" class="btn btn-primary btn-large btn-block" onclick="javascript:validate()" />
+            <a class="login-link" href="#">Lost your password?</a>
+            </br>
+            <div class="failed-login">Incorrect username or password, <br>please try again.</br></div>
+        </br>
+        </form>
+        <script type="text/javascript">
+        function validate()
+        {
+            if(   document.getElementById("text1").value == "sew2"
+                && document.getElementById("text2").value == "sew2" )
+            {
+                location.href="homepage.html";
+            }
+            else
+            {
+                location.href="loginfailed.html";
+            }
+        }
+        </script>
+
+    </div>
+    </div>
+</body>
+</body>
+</html>

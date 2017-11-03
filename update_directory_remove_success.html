@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
-	<title>Update Building</title>
-	<link href="styles/update_directory.css" rel="stylesheet" type="text/css"/>
+	<title>Update Directory</title>
+	<link href="styles/update_directory_success.css" rel="stylesheet" type="text/css"/>
     <script src="js/sidenav.js"></script>
 </head>
 
@@ -46,9 +46,17 @@
                   <option value="directory3">Engineering North</option>
                   <option value="director4">Engineering Maths</option>
               </select>
-              <a href="create_new_building.html" <button class="buttonforUpdateConfirm" type="button">Update</button></a>
+              <button class="buttonforDelete" type="button">Delete</button>
           </form>
       </div>
-      
+	  
+	    <!-- Success message -->
+	<div id="loading">
+	<div class="successBoxRemove">
+		<form action="/action_page.php" class="formforwaste">
+		<span>Building successfully deleted!</span>
+		<a href="create_new_building.html" <button class="buttonforSuccessRemove" type="button">Done</button></a>
+	</div>
+    </div>  
 </body>
 </html>
